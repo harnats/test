@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* wrap */
+#wrap{
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* 헤더 */
+#header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+    height: 100px;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/logo_h.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999px;
+}
+
+.gnb{
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.gnb_in{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    width: 50%;
+    display: flex;
+}
+
+.gnb_in .d1{
+    position: relative;
+    width: 25%;
+}
+
+.gnb_in .m1{
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.gnb_in .m1:hover{
+    background-color: #0b1b4f;
+    color: #fff;
+}
+
+.sub ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    width: 100%;
+    border: 1px solid #999;
+    z-index: 1;
+}
+
+.sub ul li a{
+    display: block;
+    padding: 10px 3px;
+    font-size: 17px;
+    text-align: center;
+    background-color:#fff;
+}
+
+.sub ul li a:hover{
+    background-color: #0b1b4f;
+    color: #fff;
+}
+
+/* 메인슬라이드 */
+#main_slide{
+    width: 100%;
+    height: 300px;
+}
+
+.slide_list{
+    position: relative;
+}
+
+.slide_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 탭메뉴 */
+#container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.tab_menu{
+    width: 40%;
+    height: 200px;
+}
+
+
+.tab_btn ul{
+    display: flex;
+}
+
+.tab_btn ul li.active{
+    text-decoration: underline;
+}
+
+.tab_btn ul li a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #0b1b4f;
+    color: #fff;
+}
+
+.tab_cont{
+    width: 100%;
+    height: 157px;
+    background-color: #d0d8f3
+}
+
+.notice{
+    padding: 10px;
+}
+
+.notice ul li{
+    position: relative;
+    margin-bottom: 3px;
+}
+
+.notice ul li span{
+    position: absolute;
+    right: 0;
+}
+
+.gallery{
+    padding-top: 20px;
+    padding-right: 10px;
+    background-color: #d0d8f3
+}
+
+.gallery ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery ul li{
+    width: 120px;
+    height: 120px;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 팝업창 */
+.popup{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup_in{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.popup_in h2{
+    margin-bottom: 10px;
+}
+
+.popup_in p{
+    margin-bottom: 15px;
+}
+
+.popup_in button{
+    padding: 3px 5px;
+}
+
+/* 배너 */
+.banner{
+    width: 30%;
+    height: 200px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 바로가기 */
+.link{
+    width: 30%;
+    height: 200px;
+}
+
+.link img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #c0c0c0;
+}
+
+.f_logo{
+    width: 20%;
+    height: 100px;
+}
+
+.f_logo a{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/logo_f.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.f_right{
+    width: 80%;
+    height: 100px;
+}
+
+.f_menu{
+    width: 100%;
+    height: 35px;
+    padding-top: 15px;
+}
+
+.f_menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+.f_menu ul li{
+    margin-right: 30px;
+}
+
+.copyright{
+    width: 100%;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+}
